@@ -1,13 +1,20 @@
-import Box from "@mui/material/Box";
-import "./App.css";
-import { Button } from "@mui/material";
+import TemperatureHumidity from "./components/TemperatureHumidity";
+import LedControl from "./components/LedControl";
+import SoilMonitor from "./components/SoilMonitor";
+import AirQuality from "./components/AirQuality";
+import MotionAlert from "./components/MotionAlert";
 
 function App() {
-    return (
-        <Box>
-            <Button variant="contained">Hello World</Button>
-        </Box>
-    );
+  return (
+    <div style={{ padding: "20px", fontFamily: "Arial" }}>
+      <h1>🌐 Smart Environment Dashboard</h1>
+      <TemperatureHumidity />
+      <LedControl />
+      <SoilMonitor />
+      <MotionAlert />
+      <AirQuality />
+    </div>
+  );
 }
 
 export default App;
